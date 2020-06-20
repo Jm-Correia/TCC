@@ -1,11 +1,10 @@
 import { User } from "./User";
 import { Condominio } from "./Condominium";
-import { InvestmentFund } from "./InvestmentFundo";
 
 export interface Grupo{
+    _id?: number,
     descricao: String,
     titulo: String,
     users: Array<User>,
-    condominio?: Condominio,
-    investmentFund?:InvestmentFund
+    condominio?: Condominio
 }

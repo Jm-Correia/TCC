@@ -23,8 +23,7 @@ class SessionController {
         let {_id, nome}:any = user;
         return res.json({
             user:{
-                _id,
-                nome,
+               nome,
             },
             token: jwt.sign({_id}, `${process.env.APP_SECRET}`, {
                 expiresIn: `${process.env.APP_TOKEN_TIME}`

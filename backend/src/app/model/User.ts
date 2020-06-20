@@ -5,18 +5,15 @@ export interface User {
     cpf: string,
     endereco?: Address,
     perfil?: Array<Perfil>,
-    senha?: string
+    senha?: string,
+    grupo?: string
+    codigo?:string
 }
 
-export interface PreCadastro{
-    nome: string,
-    cpf: string,
-    codigo: String
-}
 
 export enum Perfil{
-    Sindico = 'S',
-    Administrador = 'A',
-    Cotista = 'C',
-    Morador = 'M'
+    Sindico = 'Sindico',
+    Administrador = 'Administrador',
+    Cotista = 'Cotista',
+    Morador = 'Morador'
 }
