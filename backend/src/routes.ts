@@ -1,13 +1,13 @@
 import {Router,Response,Request} from 'express';
 import UserController from './app/controllers/UserController';
 import InvestmentFundController from './app/controllers/InvestmentFundController';
-import SessionController from './app/controllers/SessionController';
+import SessionController from '@controllers/SessionController';
 import CondominiumController from './app/controllers/CondominiumController';
 import { Modalidade } from './app/model/InvestmentFundo';
 import {Tipo} from './app/model/Condominium';
 import {Perfil} from './app/model/User';
 import GroupController from './app/controllers/GroupController';
-import PreCadastroController from './app/controllers/PreCadastroController';
+import PreCadastroController from '@controllers/PreCadastroController';
 let authConfig = require('./app/middlewares/auth');
 
 let routes = Router();
